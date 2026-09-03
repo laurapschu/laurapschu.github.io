@@ -3,83 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name — Professional Troublemaker</title>
+    <title>Your Name — Marketer & Creator</title>
     <style>
         body {
-            background-color: #f7f3ee; /* Soft parchment */
-            color: #0b1d3a;
+            background-color: #f4f4f0; /* Soft, warm minimalist background */
+            color: #0b1d3a; /* Deep, classy dark blue */
             font-family: Georgia, serif;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 60px 20px;
-            line-height: 1.5;
+            padding: 80px 20px;
+            line-height: 1.6;
         }
-        /* Quirky floating nav */
-        nav {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 80px;
-            font-family: monospace;
-            font-size: 0.9rem;
+        header {
+            margin-bottom: 60px;
         }
         nav a {
-            background: #0b1d3a;
-            color: #f7f3ee;
-            padding: 5px 10px;
+            color: #0b1d3a;
             text-decoration: none;
-            transform: rotate(-2deg);
-            transition: transform 0.2s;
-        }
-        nav a:nth-child(even) {
-            transform: rotate(2deg); /* Playful tilt */
+            margin-right: 20px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
         }
         nav a:hover {
-            transform: scale(1.1) rotate(0deg);
+            border-bottom: 1px solid #0b1d3a;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
             font-weight: normal;
-            letter-spacing: -1px;
         }
-        .highlight {
-            background-color: #ffde59; /* Bright marketing yellow accent */
-            padding: 0 5px;
-            font-style: italic;
-        }
-        .tagline {
-            font-size: 1.3rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
-        /* A fun brutalist card */
-        .marquee-box {
-            border: 2px dashed #0b1d3a;
-            padding: 15px;
-            font-family: monospace;
-            font-size: 0.85rem;
-            display: inline-block;
-            margin-top: 20px;
+        p {
+            font-size: 1.2rem;
+            opacity: 0.85;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">[home]</a>
-        <a href="about.html">[about]</a>
-        <a href="work.html">[work]</a>
-        <a href="photo.html">[photos]</a>
-        <a href="contact.html">[ping me]</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="photo.html">Photo</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
     <main>
-        <h1>I make campaigns <span class="highlight">work</span>, and websites for fun.</h1>
-        <p class="tagline">I'm [Your Name]. A marketer who actually understands data, hates corporate jargon, and writes code primarily powered by panic and iced coffee.</p>
-        
-        <div class="marquee-box">
-            ⚡ Status: Currently debugging code I don't fully understand.
-        </div>
+        <h1>Hello, I'm [Your Name].</h1>
+        <p>I do marketing, tell brand stories, and occasionally build websites on GitHub instead of sleeping. Welcome to my corner of the internet.</p>
     </main>
 
 </body>
