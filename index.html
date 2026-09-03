@@ -15,19 +15,20 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        /* Roll-up text styles using the custom serif font */
+/* Fixed roll-up text styles */
         .content {
-            height: 65px;
+            height: 75px; /* Increased height so descenders don't get clipped */
             overflow: hidden;
-            font-size: 3rem; /* Adjusted size to match heading weight */
+            font-size: 3rem; 
             line-height: 1.25;
             letter-spacing: -0.03rem;
             color: #0b1d3a;
             position: relative;
+            padding-bottom: 10px; /* Gives the letter 'g' room to breathe */
         }
         .content__container {
             overflow: hidden;
-            height: 65px;
+            height: 75px; /* Match the content height */
         }
         .content__container__list {
             padding: 0;
@@ -36,7 +37,7 @@
             animation: roll-up 12s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
         }
         .content__container__list__item {
-            height: 65px;
+            height: 75px; /* Match the container height */
             display: flex;
             align-items: center;
         }
@@ -106,7 +107,6 @@
 
     <footer class="w-full max-w-3xl mx-auto px-6 py-8 text-xs opacity-60 flex flex-col sm:flex-row justify-between items-center gap-2 border-t border-[#0b1d3a]/10">
         <p>&copy; Laura Chu 2026. Crafted with code & coffee.</p>
-        <p>Hosted on GitHub Pages</p>
     </footer>
 
 </body>
