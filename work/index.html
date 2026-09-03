@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,17 +18,138 @@
 </head>
 <body class="bg-[#f4f4f0] text-[#0b1d3a] font-sans-custom min-h-screen flex flex-col justify-between selection:bg-[#0b1d3a] selection:text-[#f4f4f0]">
 
-    <!-- Header (Using absolute paths for clean folder setup) -->
+    <!-- Header -->
     <header class="w-full max-w-4xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <a href="/" class="font-serif-custom text-2xl tracking-wide hover:opacity-75 transition-opacity">
             Laura's drawers.
         </a>
-<nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm tracking-widest uppercase font-medium">
-    <a href="/about/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">About</a>
-    <a href="/work/" class="text-[#0b1d3a] border-b border-[#0b1d3a] pb-0.5">Work</a>
-    <a href="/photo/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Photo</a>
-    <a href="/contact/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Contact</a>
-</nav>
+        <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm tracking-widest uppercase font-medium">
+            <a href="/about/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">About</a>
+            <a href="/work/" class="text-[#0b1d3a] border-b border-[#0b1d3a] pb-0.5">Work</a>
+            <a href="/photo/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Photo</a>
+            <a href="/contact/" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Contact</a>
+        </nav>
     </header>
 
-  </html>
+    <!-- Main Content: Vertical Accordion Layout -->
+    <main class="w-full max-w-4xl mx-auto px-6 py-12 my-auto">
+        <div class="mb-12">
+            <h1 class="font-serif-custom text-5xl sm:text-6xl font-normal mb-4 tracking-tight">
+                Capabilities & Expertise
+            </h1>
+            <p class="text-base sm:text-lg opacity-75 max-w-2xl">
+                Explore the strategic disciplines, digital frameworks, and creative execution areas I specialize in. 
+            </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="border-t border-[#0b1d3a]/20">
+            
+            <!-- Chapter 1: Brand Strategy -->
+            <div class="border-b border-[#0b1d3a]/20">
+                <button onclick="toggleAccordion('chapter-1')" class="w-full py-6 flex justify-between items-center text-left group">
+                    <span class="font-serif-custom text-3xl sm:text-4xl group-hover:opacity-70 transition-opacity">01 / Brand Strategy & Communications</span>
+                    <span id="icon-chapter-1" class="text-xl font-serif-custom transition-transform duration-300">+</span>
+                </button>
+                <div id="chapter-1" class="hidden pb-8 space-y-4">
+                    <p class="text-base opacity-85 leading-relaxed max-w-2xl">
+                        Crafting compelling brand identities and data-driven narratives that build long-term loyalty and high-end market positioning.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Brand Strategy</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Corporate Communications</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Campaign Communications</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 2: Social Media & Paid Growth -->
+            <div class="border-b border-[#0b1d3a]/20">
+                <button onclick="toggleAccordion('chapter-2')" class="w-full py-6 flex justify-between items-center text-left group">
+                    <span class="font-serif-custom text-3xl sm:text-4xl group-hover:opacity-70 transition-opacity">02 / Social Media & Paid Growth</span>
+                    <span id="icon-chapter-2" class="text-xl font-serif-custom transition-transform duration-300">+</span>
+                </button>
+                <div id="chapter-2" class="hidden pb-8 space-y-4">
+                    <p class="text-base opacity-85 leading-relaxed max-w-2xl">
+                        Designing impactful social strategies and performance-driven campaigns designed to scale reach, foster engagement, and drive conversions.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Social Media Management</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Social Media Strategy</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Paid Social</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 3: Content Curation -->
+            <div class="border-b border-[#0b1d3a]/20">
+                <button onclick="toggleAccordion('chapter-3')" class="w-full py-6 flex justify-between items-center text-left group">
+                    <span class="font-serif-custom text-3xl sm:text-4xl group-hover:opacity-70 transition-opacity">03 / Content Curation & Production</span>
+                    <span id="icon-chapter-3" class="text-xl font-serif-custom transition-transform duration-300">+</span>
+                </button>
+                <div id="chapter-3" class="hidden pb-8 space-y-4">
+                    <p class="text-base opacity-85 leading-relaxed max-w-2xl">
+                        Merging editorial creativity with cross-cultural copywriting, visual editing, and multi-format asset creation that resonates with audiences.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Content Strategy</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Copywriting</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Video Editing</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Photo Editing & Retouching</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4: Digital & Lifecycle -->
+            <div class="border-b border-[#0b1d3a]/20">
+                <button onclick="toggleAccordion('chapter-4')" class="w-full py-6 flex justify-between items-center text-left group">
+                    <span class="font-serif-custom text-3xl sm:text-4xl group-hover:opacity-70 transition-opacity">04 / Digital & Lifecycle Marketing</span>
+                    <span id="icon-chapter-4" class="text-xl font-serif-custom transition-transform duration-300">+</span>
+                </button>
+                <div id="chapter-4" class="hidden pb-8 space-y-4">
+                    <p class="text-base opacity-85 leading-relaxed max-w-2xl">
+                        Managing web properties and targeted email campaigns that seamlessly nurture audience relationships from first touch to conversion.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Website Management</span>
+                        <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#0b1d3a]/5 rounded-md border border-[#0b1d3a]/10">Email Marketing</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-16 text-center border-t border-[#0b1d3a]/10 pt-10">
+            <p class="text-sm opacity-75 mb-4">Want to discuss how these capabilities fit your next project?</p>
+            <a href="/contact/" class="inline-block px-6 py-3 bg-[#0b1d3a] text-[#f4f4f0] text-sm tracking-wider uppercase rounded-full hover:bg-[#0b1d3a]/90 transition-all shadow-sm">
+                Get in Touch
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl mx-auto px-6 py-8 text-xs opacity-60 flex flex-col sm:flex-row justify-between items-center gap-2 border-t border-[#0b1d3a]/10">
+        <p>&copy;Laura Chu 2026. Crafted with code & coffee.</p>
+    </footer>
+
+    <!-- Accordion Script -->
+    <script>
+        function toggleAccordion(chapterId) {
+            const content = document.getElementById(chapterId);
+            const icon = document.getElementById('icon-' + chapterId);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
