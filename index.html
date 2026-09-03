@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Chu — Marketer & Creator</title>
+    <title>Laura's drawers</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
 
@@ -16,22 +15,19 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        /* Roll-up text styles */
+        /* Roll-up text styles using the custom serif font */
         .content {
-            height: 60px;
+            height: 65px;
             overflow: hidden;
-            font-size: 2.2rem;
+            font-size: 3rem; /* Adjusted size to match heading weight */
             line-height: 1.25;
             letter-spacing: -0.03rem;
             color: #0b1d3a;
-            font-family: 'Crimson Text', serif;
-            font-style: italic;
-            font-weight: 700;
             position: relative;
         }
         .content__container {
             overflow: hidden;
-            height: 60px;
+            height: 65px;
         }
         .content__container__list {
             padding: 0;
@@ -40,7 +36,7 @@
             animation: roll-up 12s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
         }
         .content__container__list__item {
-            height: 60px;
+            height: 65px;
             display: flex;
             align-items: center;
         }
@@ -57,7 +53,7 @@
         }
 
         @media only screen and (max-width: 768px) {
-            .content { font-size: 1.8rem; height: 50px; }
+            .content { font-size: 2.4rem; height: 50px; }
             .content__container { height: 50px; }
             .content__container__list__item { height: 50px; }
         }
@@ -67,10 +63,9 @@
 
     <header class="w-full max-w-3xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <a href="index.html" class="font-serif-custom text-2xl tracking-wide hover:opacity-75 transition-opacity">
-            Laura's drawers.
+            Laura Chu
         </a>
         <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm tracking-widest uppercase font-medium">
-            <a href="index.html" class="text-[#0b1d3a] border-b border-[#0b1d3a] pb-0.5">Home</a>
             <a href="about.html" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">About</a>
             <a href="work.html" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Work</a>
             <a href="photo.html" class="text-[#0b1d3a]/70 hover:text-[#0b1d3a] border-b border-transparent hover:border-[#0b1d3a] pb-0.5 transition-all">Photo</a>
@@ -84,14 +79,14 @@
                 Marketer & Builder
             </span>
             <h1 class="font-serif-custom text-5xl sm:text-7xl font-normal leading-none tracking-tight">
-                Hello, I'm <span class="italic">Laura Chu</span>.
+                Hello, I'm <span class="italic">Laura</span>.
             </h1>
             <p class="text-lg sm:text-xl font-serif-custom opacity-85 max-w-xl leading-relaxed">
                 I do marketing, tell brand stories, and occasionally build websites on GitHub instead of sleeping. Welcome to my corner of the internet.
             </p>
 
-            <!-- Roll-up text container -->
-            <div class="content pt-2">
+            <!-- Roll-up text container using font-serif-custom -->
+            <div class="content font-serif-custom italic pt-2">
                 <div class="content__container">
                     <ul class="content__container__list">
                         <li class="content__container__list__item">Social Media Strategist.</li>
